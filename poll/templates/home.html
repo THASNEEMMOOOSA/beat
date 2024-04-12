@@ -1,0 +1,52 @@
+{% extends 'master.html' %}
+    
+{% block content %}
+
+{% load static %}
+
+
+<h1>Hello   World , Welcome to Home</h1>
+<!-- <img src="{% static 'images/car.jpeg' %}" alt="">
+
+<img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/10406/1697698080681/front-left-side-47.jpg?impolicy=resize&imwidth=360" alt="">
+
+
+
+<img src="{% static 'images/th.jpeg' %}" alt="">
+ -->
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+   
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/10406/1697698080681/front-left-side-47.jpg?impolicy=resize&imwidth=360" class=" img-fluid w-100 h-100" alt="...">
+       
+   
+    </div>
+    <div class="col">
+      
+        <img src="{% static 'images/car.jpeg' %}" class=" img-fluid w-100 h-100" alt="...">
+        
+     
+    </div>
+    <div class="col">
+   
+        <img src="{% static 'images/th.jpeg' %}" class=" img-fluid w-100 h-100" alt="...">
+        
+    </div>
+    <div class="col">
+  
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/10406/1697698080681/front-left-side-47.jpg?impolicy=resize&imwidth=360" class=" img-fluid w-100 h-100" alt="...">
+        
+   
+    </div>
+  </div>
+
+
+
+<a href="/persons">Persons list </a>
+<a href="/page3">Page 3</a>
+
+
+
+{% endblock %}

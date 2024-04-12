@@ -1,0 +1,58 @@
+{% extends 'master.html' %}
+    
+{% block content %}
+
+    
+    <h1>Hello , List of Persons</h1>
+
+
+
+
+
+
+<div class="container">
+
+<div  class="row row-cols-1 row-cols-md-3 g-4 ">
+
+    {% for x in p  %}
+
+    <div  class="col ">
+      <div class="card h-100 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/512px-Google_Contacts_icon.svg.png?20221102143815" class="card-img-top w-50 h-50 mx-auto"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{x.name}}</h5>
+          <h6 class="card-text">{{x.eid}}</h6>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="persondetails/{{x.id}}/">More Details</a>
+        </div>
+      </div>
+    </div>
+    
+    {% endfor %}
+
+
+  </div>
+
+</div>
+
+
+
+
+
+{% load static %}
+
+
+
+<video src="{% static 'videos/video.mp4' %}" controls></video>
+
+
+
+
+
+
+<a href="/">Home</a>
+<a href="/page3">Page 3</a>
+
+
+{% endblock %}

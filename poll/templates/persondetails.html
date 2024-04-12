@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+    
+{% block content %}
+
+    
+    <h1>Details of EMP ID: {{p.eid}}</h1>
+    <h2>Name: {{p.name}}</h2>
+    <h3>DOB: {{p.dob}}</h3>
+    <h3>Address :{{p.address}}</h3>
+    <h3>Email: {{p.email}}</h3>
+    <h3>Mob :{{p.mobno}}</h3>
+
+
+<a class="btn btn-info" href="updatepage/">Update</a>
+
+<a class="btn btn-danger" href="delete/">Delete</a>
+
+
+
+
+<a href="/">Home</a>
+<a href="/page2">Page 2</a>
+
+
+
+
+
+
+{% endblock %}
